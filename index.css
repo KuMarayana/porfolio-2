@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; outline: 0; top: 0;
+    list-style-type: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background: #1B2430;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+
+header {
+    max-width: 980px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.header-porfolio h1 {
+    font-weight: 700;
+    font-size: 2.24rem;
+    color: white;
+}
+
+.button button {
+    background: #FFB100;
+    border-radius: 20px;
+    box-shadow: #FFB100 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 10px 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+}
+
+.hero {
+    margin-top: 10rem;
+}
+
+.hero {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero__flap h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 9px;
+    text-shadow: 0px 20px 10px -10px white;
+}
+
+.hero__flap p {
+    color: gray;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.image__hero img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.dark__light {
+    margin-left: auto;
+}
+
+.dark__light i {
+    font-size: 1.4rem;
+    color: white;
+    margin: 30px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.tag__service h1 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: white;
+    margin-bottom: 30px
+}
+
+.icons__service i {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: #1B2430 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,#1B2430 0 2px 4px,#1B2430 0 4px 8px, #1B2430 0 8px 16px,#1B2430 0 16px 32px;
+    color: #1B2430;
+    cursor: pointer;
+    align-items: center;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+   -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: #1B2430 0 -25px 18px -14px inset,#1B2430 0 1px 2px,#1B2430 0 2px 4px,#1B2430 0 4px 8px, #1B2430 0 8px 16px,#1B2430 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .section-padding {
+    padding-top: 80px;
+  }
+  
+  .gallery-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #f44336;
+  } 
+  
+  .filter {
+    text-align: center;
+    max-width: 1050px;
+    margin: auto;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 5px 4px 4px 0;
+    display: inline-block;
+    color: #003;
+    background: #eee;
+    border: 1px solid #f44336;
+    transition: all 0.4s;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn:hover,.btn-active {
+    background: #f44336;
+    color: #fff;
+    -webkit-transform: translateY(3px);
+    -ms-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    max-width: 1320px;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    /* gap: 14px; */
+  }
+  .gallery a {
+    display: flex;
+  }
+  .gallery img {
+    width: 200px;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px 10px;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  
+  .sets .hide,
+  .sets .pophide {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 500;
+    right: 25px;
+    top: 25px;
+    color: white;
+    transition: 0.5s linear;
+    padding: 8px 40px;
+    border-radius: 25px;
+    background: red;
+    outline-offset: -6px;
+    outline: 2px solid #fff;
+  }
+  .closeBtn:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    outline: 2px solid #000;
+  }
+  
+  .openDiv {
+    width: 100%;
+    height: 100vh;
+    background: #000000e7;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    z-index: 9999;
+  }
+  .imgPreview {
+    width: 70%;
+    object-fit: scale-down;
+    max-height: 40vw;
+    height: auto;
+  }
+  .prevButton,
+  .nextButton {
+    transition: 1s linear;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background: #0005;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+  }
+  .prevButton:hover,
+  .nextButton:hover {
+    background: #fff;
+    color: black;
+  }
+  
+  /* resposive CSS Code */
+  
+  @media (max-width: 1199px) {
+    .section-padding {
+      padding-top: 70px;
+    }
+  }
+  @media (max-width: 991px) {
+    .section-padding {
+      padding-top: 50px;
+    }
+  }
+  @media (max-width: 767px) {
+    .title {
+      font-size: 36px;
+    }
+    .gallery img {
+      margin: 8px 8px;
+      width: 175px;
+    }
+    .closeBtn {
+      padding: 6px 25px;
+    }
+    .prevButton,
+    .nextButton {
+      font-size: 18px;
+      padding: 8px 25px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .section-padding {
+      padding-top: 30px;
+    }
+    
+    .gallery img {
+      margin: 8px 6px;
+      width: 155px;
+    }
+  
+    .closeBtn {
+      font-size: 18px;
+      border-radius: 15px;
+    }
+    .prevButton,
+    .nextButton {
+      font-size: 18px;
+      padding: 6px 20px;
+      border-radius: 10px;
+      margin: 5px;
+    }
+  
+    .imgPreview {
+      width: 90%;
+      max-height: 50vh;
+      height: auto;
+    }
+    
+ }
+
+ .container {
+    max-width: 980px;
+    margin: auto;
+ }
+
+ .service {
+    margin-top: 20rem;
+ }
+
+ .service__title {
+    text-align: center;
+ }
+
+ .service__title h1 {
+    font-size: 1.875rem;
+    margin-bottom: 15px;
+ }
+
+ .service__title p {
+    color: gray;
+    margin-bottom: 30px;
+ }
+
+@media (max-width: 768px) {
+
+    #header__button {
+        display: none;
+    }
+
+    .header-porfolio h1 {
+        font-size: 1.875rem;
+        margin-left: 30px;
+    }
+
+    .hero__flap h2 {
+        font-size: 2.6rem;
+    }
+
+    .hero__flap p {
+        font-size: 15px;
+    }
+}
